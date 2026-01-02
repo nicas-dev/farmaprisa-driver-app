@@ -9,7 +9,16 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.farmaprisa.driverapp",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Necesitamos tu ubicación para mostrar tu posición en el mapa y optimizar las rutas de entrega.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Necesitamos tu ubicación en segundo plano para rastrear las entregas en tiempo real.",
+        "NSLocationAlwaysUsageDescription": "Necesitamos tu ubicación en segundo plano para rastrear las entregas en tiempo real."
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyDaSPBlZmgl3ipZfIK_z0xdXmkJBGveUJY"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -19,7 +28,18 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.farmaprisa.driverapp",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDaSPBlZmgl3ipZfIK_z0xdXmkJBGveUJY"
+        }
+      }
     },
     "web": {
       "output": "static",
@@ -37,6 +57,14 @@
           "dark": {
             "backgroundColor": "#000000"
           }
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Necesitamos tu ubicación para mostrar tu posición en el mapa y rastrear las entregas.",
+          "locationAlwaysPermission": "Necesitamos tu ubicación en segundo plano para rastrear las entregas en tiempo real.",
+          "locationWhenInUsePermission": "Necesitamos tu ubicación para mostrar tu posición en el mapa."
         }
       ]
     ],
