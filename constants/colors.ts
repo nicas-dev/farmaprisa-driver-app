@@ -6,9 +6,9 @@
 export const Colors = {
     light: {
         // Primary Colors - Pharmacy Blue/Green
-        primary: '#00A896', // Teal/Turquoise
-        primaryDark: '#028090',
-        primaryLight: '#05668D',
+        primary: '#193cb8', // Teal/Turquoise
+        primaryDark: '#162456',
+        primaryLight: '#51a2ff',
 
         // Secondary Colors
         secondary: '#02C39A',

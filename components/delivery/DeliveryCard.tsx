@@ -41,7 +41,7 @@ export default function DeliveryCard({ delivery, onPress }: DeliveryCardProps) {
     };
 
     const formatCurrency = (amount: number) => {
-        return `RD$${amount.toFixed(2)}`;
+        return `C$ ${amount.toFixed(2)}`;
     };
 
     return (
